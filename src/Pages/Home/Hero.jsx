@@ -6,7 +6,9 @@ const Hero = () => {
         <div className="main-container-box hero-box">
             <div className="container pt-5 pb-5 mx-auto ">
                 <div className="socials-box-corner h-full w-full">
-                    <video src={banner} muted loop autoPlay></video>
+                    <video autoPlay muted loop >
+                        <source src={banner} type="video/mp4" />
+                    </video>
                     
                 </div>
             </div>
