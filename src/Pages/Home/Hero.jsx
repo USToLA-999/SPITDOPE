@@ -1,4 +1,4 @@
-import banner from  '../../assets/bannervideo.mp4'
+import banner from  '/bannervideo.mp4'
 
 
 const Hero = () => {

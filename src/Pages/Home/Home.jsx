@@ -3,7 +3,7 @@ import FirstBar from './FirstBar'
 import Navbar from '../../components/Navbar'
 import Hero from './Hero'
 
-import WeDo from './WeDo'
+
 import Event from './Event'
 import Footer from '../../components/Footer'
 import Jouney from './Jouney'
