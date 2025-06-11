@@ -1,4 +1,4 @@
-import banner from  '/bannervideo.mp4'
+
 
 
 const Hero = () => {
@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="container pt-5 pb-5 mx-auto ">
                 <div className="socials-box-corner h-full w-full">
                     <video autoPlay muted loop >
-                        <source src={banner} type="video/mp4" />
+                        <source src='/public/bannervideo.mp4' type="video/mp4" />
                     </video>
                     
                 </div>
