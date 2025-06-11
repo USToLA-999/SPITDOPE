@@ -75,7 +75,7 @@ const Event = () => {
                     {/* Responsive Card Grid */}
                     <div className="flex sm:flex-row md:flex-row flex-col justify-center items-center w-full  gap-8 mt-10">
                         <BentoTilt className='mx-auto'>
-                            <BentoCard src={DSC} title="SDI: 101 " />
+                            <BentoCard src={DSC} title="SDI: Delhi 101 " />
                         </BentoTilt>
                         <BentoTilt className='mx-auto'>
                             <BentoCard src={nextgenparty} title="SDI: NEXT GEN." />
