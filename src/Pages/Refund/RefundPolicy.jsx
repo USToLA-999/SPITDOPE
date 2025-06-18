@@ -1,4 +1,4 @@
-import { IoMdMicrophone } from 'react-icons/io';
+import { IoMdMicrophone  } from 'react-icons/io';
 
 const RefundPolicy = () => {
   return (
@@ -41,8 +41,8 @@ const RefundPolicy = () => {
                 Refunds on physical items (e.g., t-shirts, hoodies, accessories) will only be processed under the following conditions:
               </p>
               <ul className="mx-5">
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Item is damaged or defective upon arrival.</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Wrong item or size shipped by us.</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Item is damaged or defective upon arrival.</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Wrong item or size shipped by us.</li>
               </ul>
               <p className="mt-4">Refund requests must be made within <strong>7 days</strong> of receiving your order.</p>
             </div>
@@ -55,9 +55,9 @@ const RefundPolicy = () => {
             <div className="paraliners poppins-regular">
               <p>To request a refund, email us at <strong>SpitDope@gmail.com</strong> with:</p>
               <ul className="mx-5">
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Order ID and date of purchase</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Clear pictures of the damaged/incorrect item</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Brief description of the issue</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Order ID and date of purchase</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Clear pictures of the damaged/incorrect item</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Brief description of the issue</li>
               </ul>
               <p className="mt-4">Once approved, we will initiate your refund or send a replacement as per your choice.</p>
             </div>
@@ -70,9 +70,9 @@ const RefundPolicy = () => {
             <div className="paraliners poppins-regular">
               <p>We do not offer refunds under the following circumstances:</p>
               <ul className="mx-5">
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Change of mind after purchase</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Wrong size ordered by customer</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Late refund requests (after 7 days of delivery)</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Change of mind after purchase</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Wrong size ordered by customer</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Late refund requests (after 7 days of delivery)</li>
               </ul>
             </div>
           </div>

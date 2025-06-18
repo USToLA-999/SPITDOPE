@@ -1,4 +1,4 @@
-import { IoMdMicrophone } from 'react-icons/io';
+import { IoMdMicrophone  } from 'react-icons/io';
 
 const CancellationPolicy = () => {
   return (
@@ -42,8 +42,8 @@ const CancellationPolicy = () => {
             <div className="paraliners poppins-regular">
               <p>To cancel your order within the allowed time frame, please email us at:</p>
               <ul className="mx-5">
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />📧 <strong>SpitDope@gmail.com</strong></li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Include your <strong>Order ID</strong> and the reason for cancellation</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />📧 <strong>SpitDope@gmail.com</strong></li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Include your <strong>Order ID</strong> and the reason for cancellation</li>
               </ul>
               <p className="mt-4">We will confirm the cancellation via email if the request is eligible.</p>
             </div>
@@ -78,9 +78,9 @@ const CancellationPolicy = () => {
             <div className="paraliners poppins-regular">
               <p>Cancellations are not allowed for:</p>
               <ul className="mx-5">
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Customized or pre-ordered items</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Limited edition merchandise</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone size={20} color="purple" />Digital downloads</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Customized or pre-ordered items</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Limited edition merchandise</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " size={20} color="purple" />Digital downloads</li>
               </ul>
               <p className="mt-4">These products are made-to-order or delivered instantly and thus not eligible for cancellation.</p>
             </div>

@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { IoMdMicrophone } from 'react-icons/io';
+import { IoMdMicrophone  } from 'react-icons/io';
 
 const PrivacyPolicy = () => {
   return (
@@ -28,8 +28,8 @@ const PrivacyPolicy = () => {
             <div className="paraliners poppins-regular">
               <p>We may collect personal and non-personal information such as:</p>
               <ul className="mx-5">
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone color="purple" size={20} />Name, email address, shipping address, and payment details.</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone color="purple" size={20} />Device, browser, IP address, and usage data.</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20} />Name, email address, shipping address, and payment details.</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20} />Device, browser, IP address, and usage data.</li>
               </ul>
             </div>
           </div>
@@ -40,9 +40,9 @@ const PrivacyPolicy = () => {
             </div>
             <div className="paraliners  poppins-regular">
               <ul className="mx-5">
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone color="purple" size={20} />To process and ship orders.</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone color="purple" size={20} />Send transactional and promotional emails (if opted-in).</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone color="purple" size={20} />Improve website performance and user experience.</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20} />To process and ship orders.</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20} />Send transactional and promotional emails (if opted-in).</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20} />Improve website performance and user experience.</li>
               </ul>
             </div>
           </div>
@@ -80,8 +80,8 @@ const PrivacyPolicy = () => {
             </div>
             <div className="paraliners  poppins-regular">
               <ul className="mx-5">
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone color="purple" size={20} />Request access or deletion of your data.</li>
-                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone color="purple" size={20} />Withdraw consent for marketing communications.</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20} />Request access or deletion of your data.</li>
+                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20} />Withdraw consent for marketing communications.</li>
               </ul>
             </div>
           </div>
