@@ -71,7 +71,7 @@ const Terms = () => {
                             <ul className="mx-5">
                                 <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20} />We ship domestically and may offer international shipping based on location.</li>
                                 <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20}  />Orders are typically dispatched within 3-7 business days after a merch drop.</li>
-                                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" className="min-w-[20px] mt-1 flex-shrink-0 " size={20}  />Delivery times may vary. SpitDope is not responsible for courier delays or incorrect delivery information provided by the customer.</li>
+                                <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple"  size={20}  />Delivery times may vary. SpitDope is not responsible for courier delays or incorrect delivery information provided by the customer.</li>
                                 <li className="mt-2 flex gap-1 items-center"><IoMdMicrophone className="min-w-[20px] mt-1 flex-shrink-0 " color="purple" size={20} />Tracking details will be emailed once the order is dispatched.</li>
                             </ul>
                         </div>
