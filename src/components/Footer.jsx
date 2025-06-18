@@ -1,16 +1,32 @@
+import { Link } from 'react-router-dom'
 import spitdope from  '../assets/spitdope.png'
 
 const Footer = () => {
   return (
-    <footer className=" bg-gray-100 dark:bg-gray-900">
+    <footer className=" bg-gray-900 ">
   <div className="mx-auto  px-4 py-16 sm:px-6 lg:px-8">
     <div className="flex justify-center text-teal-600 dark:text-teal-300">
       <img src={spitdope} width={200} alt="" />
     </div>
 
-    <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
+    <p className="mx-auto poppins-regular mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
     SpitDope: Unleash your creativity, own your hustle, and make your mark. Where passion meets power, ideas spark, and boundaries are redefined every day.
     </p>
+
+    <div className="fourconditions flex sm:flex-row flex-col gap-5 text-xl justify-around items-center mt-10 text-white w-full mx-auto">
+      <div className="termsconition jersey-15-regular ">
+        <Link to={'/terms&condition'}><p>terms and condition</p></Link>
+      </div>
+      <div className="privacypolicy jersey-15-regular">
+        <Link to={'/privacy'}><p>Privacy policy</p></Link>
+      </div>
+      <div className="refund jersey-15-regular">
+        <Link to={'/refund'} ><p>Refund</p></Link> 
+      </div>
+      <div className="cancelation jersey-15-regular">
+        <Link to={'/cancellation'} >  <p>Cancelation</p> </Link>
+      </div>
+    </div>
 
 
     <ul className="mt-12 flex justify-center gap-6 md:gap-8">

@@ -1,7 +1,11 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import DSC from '../../assets/DSC.jpeg';
 import nextgenparty from '../../assets/nextgenparty.png';
 import seedhemaut from '../../assets/seedhemaut.png';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const BentoTilt = ({ children, className = '' }) => {
     const [transformStyle, setTransformStyle] = useState('');
@@ -40,16 +44,16 @@ const BentoTilt = ({ children, className = '' }) => {
 
 const BentoCard = ({ src, title }) => {
     return (
-        <div className="relative w-full overflow-hidden rounded-lg aspect-[4/5]">
+        <div className="relative mb-5 w-full overflow-hidden rounded-lg">
             <img
                 src={src}
                 alt={title}
-                className=" rounded-lg"
+                className="rounded-lg"
                 width={300}
                 height={300}
             />
-            <div className="absolute top-0 w-full py-4 flex justify-center  items-center " style={{marginTop:"-24%"}}>
-                <h1 className="bebas-neue-regular text-4xl  text-center " style={{color:'#FFF'}}>
+            <div className="absolute bottom-2 w-full py-4 flex justify-center items-center">
+                <h1 className="orbitron font-bold text-2xl text-center" style={{ color: '#FFF' }}>
                     {title}
                 </h1>
             </div>
@@ -58,29 +62,47 @@ const BentoCard = ({ src, title }) => {
 };
 
 const Event = () => {
-    return (
-        <div className="container-event tagbox py-16 px-4 min-h-full ">
-            <div className="container mx-auto">
-                <div className=" w-full h-full ">
+    useEffect(() => {
+        const elements = gsap.utils.toArray('.event-animated');
 
+        gsap.fromTo(
+            elements,
+            { opacity: 0, y: 100 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: 'power3.out',
+                stagger: 0.3,
+                scrollTrigger: {
+                    trigger: '.container-event',
+                    start: 'top 80%',
+                    toggleActions: 'play none none reverse',
+                },
+            }
+        );
+    }, []);
+
+    return (
+        <div className="container-event tagbox py-10 px-4 min-h-full">
+            <div className="container mx-auto">
+                <div className="w-full h-full">
                     {/* Headline */}
-                    <div className="text-center mb-10">
-                        <h1 className="bebas-neue-regular text-4xl sm:text-6xl">
+                    <div className="text-center">
+                        <h1 className="orbitron font-bold text-4xl sm:text-5xl">
                             Spit Events: <span className="text-purple-800">Karname</span>
                         </h1>
                     </div>
 
-                    
-
                     {/* Responsive Card Grid */}
-                    <div className="flex sm:flex-row md:flex-row flex-col justify-center items-center w-full  gap-8 mt-10">
-                        <BentoTilt className='mx-auto'>
+                    <div className="flex sm:flex-row md:flex-row flex-col justify-center items-center w-full gap-8 mt-10">
+                        <BentoTilt className="mx-auto event-animated">
                             <BentoCard src={DSC} title="SDI: Delhi 101 " />
                         </BentoTilt>
-                        <BentoTilt className='mx-auto'>
+                        <BentoTilt className="mx-auto event-animated">
                             <BentoCard src={nextgenparty} title="SDI: NEXT GEN." />
                         </BentoTilt>
-                        <BentoTilt className='mx-auto '>
+                        <BentoTilt className="mx-auto event-animated">
                             <BentoCard src={seedhemaut} title="SDI: Block Party" />
                         </BentoTilt>
                     </div>
@@ -91,4 +113,3 @@ const Event = () => {
 };
 
 export default Event;
-    
