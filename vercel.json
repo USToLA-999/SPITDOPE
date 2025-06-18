@@ -1,32 +1,7 @@
+
+
 {
-    "routes":[
-        {
-            "src":"/",
-            "dest":"/"
-        },
-        {
-            "src":"/aboutus",
-            "dest":"/"
-        },
-        {
-            "src":"/merch",
-            "dest":"/"
-        },
-        {
-            "src":"/terms&condition",
-            "dest":"/"
-        },
-        {
-            "src":"/privacy",
-            "dest":"/"
-        },
-        {
-            "src":"/refund",
-            "dest":"/"
-        },
-        {
-            "src":"/cancellation",
-            "dest":"/"
-        }
-    ]
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
