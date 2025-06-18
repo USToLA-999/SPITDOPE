@@ -13,18 +13,18 @@ const Footer = () => {
     SpitDope: Unleash your creativity, own your hustle, and make your mark. Where passion meets power, ideas spark, and boundaries are redefined every day.
     </p>
 
-    <div className="fourconditions flex sm:flex-row flex-col gap-5 text-xl justify-around items-center mt-10 text-white w-full mx-auto">
+    <div className="fourconditions flex sm:flex-row flex-col gap-10 text-xl justify-center items-center mt-10 text-white w-full mx-auto">
       <div className="termsconition jersey-15-regular ">
-        <Link to={'/terms&condition'}><p>terms and condition</p></Link>
+        <Link to={'/terms&condition'}><p>terms & condition</p></Link>
       </div>
       <div className="privacypolicy jersey-15-regular">
         <Link to={'/privacy'}><p>Privacy policy</p></Link>
       </div>
       <div className="refund jersey-15-regular">
-        <Link to={'/refund'} ><p>Refund</p></Link> 
+        <Link to={'/refund'} ><p>Refund Policy</p></Link> 
       </div>
       <div className="cancelation jersey-15-regular">
-        <Link to={'/cancellation'} >  <p>Cancelation</p> </Link>
+        <Link to={'/cancellation'} ><p>Cancelation Policy</p> </Link>
       </div>
     </div>
 

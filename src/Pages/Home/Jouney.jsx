@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect } from 'react';
 import nextgen from '../../assets/nextgen.png';
 import gsap from 'gsap';

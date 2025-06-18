@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect } from 'react';
 import cypher from '../../assets/cypher.png';
 import ScrollTrigger from 'gsap/ScrollTrigger';

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { PiMicrophoneStageDuotone } from 'react-icons/pi'
 import spitdope from '../../assets/spitdope.png'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
