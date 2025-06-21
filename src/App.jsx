@@ -9,6 +9,10 @@ import Privacy from './Pages/Privacy/Privacy'
 import Refund from './Pages/Refund/Refund'
 import Cancellation from './Pages/Cancellation/Cancellation'
 import ScrollToTop from './ScrollToTop'
+import Cart from './Pages/Merch/Cart'
+import AdminLogin from './Pages/Admin/AdminPage'
+import AdminDashboard from './Pages/Admin/AdminDashboard'
+import { CartProvider } from './context/CartContext'
 
 
 
@@ -17,6 +21,7 @@ function App() {
 
   return (
     <>
+    <CartProvider>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,7 +31,11 @@ function App() {
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/refund' element={<Refund />} />
         <Route path='/cancellation' element={<Cancellation />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
+    </CartProvider>
     </>
   )
 }

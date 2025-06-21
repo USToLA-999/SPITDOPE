@@ -1,7 +1,8 @@
 
 import Footer from '../../components/Footer'
 import Navbar from '../../components/Navbar'
-import ComingSoon from './ComingSoon'
+
+import ProductList from './ProductList'
 
 const Merch = () => {
   return (
@@ -9,7 +10,8 @@ const Merch = () => {
         <div className="">
             <Navbar />
         </div>
-        <ComingSoon />
+        {/* <ComingSoon /> */}
+        <ProductList />
         <Footer />
     </>
   )

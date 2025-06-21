@@ -8,9 +8,11 @@ import { LiaOpencart } from "react-icons/lia";
 import { FaUserAstronaut } from "react-icons/fa";
 import { RxDiscordLogo } from "react-icons/rx";
 import { PiYoutubeLogoLight } from "react-icons/pi";
+import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const { cart } = useCart();
 
   const handleClick = () => {
     setClick(!click);
@@ -36,7 +38,14 @@ const Navbar = () => {
             </div>
             {/* Cart and User icons */}
             <div className="cart-box sm:flex hidden items-end gap-5 absolute right-0 top-15 mr-4">
-              <p className="text-3xl rounded jersey-15-regular "><LiaOpencart /></p>
+              <div className="cart relative">
+                <Link to={'/cart'}><p className="text-3xl rounded jersey-15-regular "><LiaOpencart /></p></Link>
+                 {cart.length > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2 ">
+                    {cart.length}
+                  </span>
+                )}  
+              </div>
               <p><FaUserAstronaut className="text-3xl rounded jersey-15-regular" /></p>
             </div>
           </div>
